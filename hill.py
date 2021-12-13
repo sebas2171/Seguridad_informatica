@@ -51,5 +51,11 @@ k = [[5, 11], [8, 15]]
 alpha = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'
 alfabeto = list(alpha)
 mod = hill(0, m, k, alfabeto, 27)
+palabra_final = []
+for j in range(int(len(m)/2)):
+    for i in range(2):
+        palabra_final.append(alfabeto[int(mod[i][j])])
 
-print(mod)
+palabra_final = "".join(palabra_final)
+
+print(palabra_final)
