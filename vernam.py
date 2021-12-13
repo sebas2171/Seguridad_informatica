@@ -67,8 +67,7 @@ symb = {
 
 key_list = list(symb.keys())
 val_list = list(symb.values())
-# position = val_list.index('001010')
-#print(key_list)
+
 
 def vernam(text, key):
     text = text.replace(' ', '')
